@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### About Porject
+As given in the Frontend Trainees Assignment Document I have tried to replicate it to the best of my ability on the large screens as mobile responsive was not mentioned on the document so I solely focused on making the graphs and search everything work . As the second row was no graph available in the screenshots so I took the liberty and if add widget button is clicked it will create pie graph in that row.
+# Add Widget button:-
+It is according to the row whichever row you click in the add widget will create a widget of that particular Type.
+#
+
 ## Available Scripts
 
 In the project directory, you can run:
