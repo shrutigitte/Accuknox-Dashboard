@@ -7,7 +7,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 function DonutChart({ data, labels = [] }) {
   const colors = ['#4CAF50', '#FF6384', '#DFFF00', '#FF7F50', '#36A2EB', '#FFCE56'];
 
-  // Dynamically select only the necessary colors and labels based on data length
+  // Dynamically selecting only the necessary colors and labels based on number of data-label set
   const chartData = {
     labels: labels.slice(0, data.length),
     datasets: [
