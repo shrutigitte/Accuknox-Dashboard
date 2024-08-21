@@ -11,6 +11,8 @@ It is according to the row whichever row you click in the add widget will create
 
 In the project directory, you can run:
 
+### `cd dashboard-app`
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -35,6 +37,15 @@ You may also see any lint errors in the console.
 
 ## Screenshot of removing one of the Widget from second row using cross button
 ![Screenshot of removing one of the Widget from second row using cross button](image-4.png)
+
+## Screenshot of Searching (It shows no Graph to display if there is no graph with that particular title in the row) :-Only relevant graphs are visible on screen
+![Screenshot of Searching (It shows no Graph to display if there is no graph with that particular title in the row)](image-5.png) 
+
+## Mobile View 
+![Mobile View](image-6.png)
+
+## IPAD view
+![Ipad View](image-7.png)
 
 ## Learn More
 
