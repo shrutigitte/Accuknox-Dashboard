@@ -70,11 +70,7 @@ function Dashboard() {
     setNewLabels('');
     setTitle('');
   };
-  const allWidgets = [
-    ...donutWidgets.map(widget => ({ ...widget, type: 'donut' })),
-    ...pieWidgets.map(widget => ({ ...widget, type: 'pie' })),
-    ...barWidgets.map(widget => ({ ...widget, type: 'bar' })),
-  ];
+  
   // Enhanced filtering logic that ranks widgets based on search relevance
   const filterWidgets = (widgets) => {
     return widgets
@@ -86,10 +82,7 @@ function Dashboard() {
       });
   };
 
-  const handleSearchInputChange = (e) => {
-    setSearchQuery(e.target.value);
-    setShowSearchResults(e.target.value.trim() !== '');
-  };
+
 
 
   return (
