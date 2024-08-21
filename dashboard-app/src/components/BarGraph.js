@@ -2,11 +2,11 @@ import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from 'chart.js';
 
-// Register the required components
+// Registering the required components
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 function BarGraph({ data, labels }) {
-  // Create a single dataset for the stacked bar chart
+  // a single dataset for the stacked bar chart
   const chartData = {
     labels: labels,
     datasets: [
@@ -28,7 +28,7 @@ function BarGraph({ data, labels }) {
     ],
   };
 
-  // Options for the bar chart
+  // the bar chart
   const options = {
     indexAxis: 'y', // Makes the bar graph horizontal
     responsive: true,
