@@ -26,8 +26,10 @@ function Dashboard() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const addWidget = () => {
-    const data = newData.split(',').map(Number);
-    const labels = newLabels.split(',').map(label => label.trim());
+    // const data = newData.split(',').map(Number);
+    // const labels = newLabels.split(',').map(label => label.trim());
+    const data = newData.trim() ? newData.split(',').map(Number) : [];
+    const labels = newLabels.trim() ? newLabels.split(',').map(label => label.trim()) : [];
 
     // Validating input
     if (data.length !== labels.length || !labels.length) {
