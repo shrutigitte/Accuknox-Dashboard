@@ -33,6 +33,9 @@ You may also see any lint errors in the console.
 ## Screenshot of Widget added in First Row(Donut)
 ![Screenshot of Widget added in First Row(Donut)](image-3.png)
 
+## Screenshot of removing one of the Widget from second row using cross button
+![Screenshot of removing one of the Widget from second row using cross button](image-4.png)
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
