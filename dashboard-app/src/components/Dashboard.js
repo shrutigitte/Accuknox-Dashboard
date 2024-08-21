@@ -294,7 +294,7 @@ function Dashboard() {
     { data: [74, 4, 8, 14], labels: ['Passed', 'Not Available', 'Warning', 'Failed'], title: 'Cloud Account Risk Assessment' },
   ]);
   const [pieWidgets, setPieWidgets] = useState([
-    {title:'Top 5 namespace Specific Alerts'},{title:'Workload Alerts'}
+    {data:[],labels:[],title:'Top 5 namespace Specific Alerts'},{data:[],labels:[],title:'Workload Alerts'}
 ]); // Start with no pie widgets
   const [barWidgets, setBarWidgets] = useState([
         { data: [100, 200, 300], labels: ['Critical', 'High', 'Medium'], title: 'Image Risk Assessment' },
@@ -436,7 +436,14 @@ function Dashboard() {
                 ✕
               </button>
               <h3 className="text-lg font-semibold text-center">{widget.title}</h3>
+              {widget.data.length > 0 && widget.labels.length > 0 ? (
               <PieChart data={widget.data} labels={widget.labels} />
+            ) : (
+              <div className="flex items-center justify-center h-32">
+                <MdAutoGraph className="text-gray-400 text-6xl" />
+                <p className="text-gray-600 text-lg ml-4">No Graph Available</p>
+              </div>
+            )}
             </div>
           ))
         ) : (
@@ -476,7 +483,14 @@ function Dashboard() {
               ✕
             </button>
             <h3 className="text-lg font-semibold text-center">{widget.title}</h3>
-            <BarGraph data={widget.data} labels={widget.labels} />
+            {widget.data.length > 0 && widget.labels.length > 0 ? (
+              <BarGraph data={widget.data} labels={widget.labels} />
+            ) : (
+              <div className="flex items-center justify-center h-32">
+                <MdAutoGraph className="text-gray-400 text-6xl" />
+                <p className="text-gray-600 text-lg ml-4">No Graph Available</p>
+              </div>
+            )}
           </div>
         ))}
         {barWidgets.length < 5 && (
